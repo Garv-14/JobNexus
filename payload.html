@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranked Candidates</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Ranked Candidates</h1>
+    <table id="candidates-table">
+        <thead>
+            <tr>
+                <th>Candidate ID</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Text Match</th>
+                <th>Location Match</th>
+                <th>Salary Match</th>
+                <th>Education Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be populated dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch data from the ngrok URL
+        const ngrokUrl = "https://ec81-38-188-110-250.ngrok-free.app/rank_candidates";// url generated paste here keep /rank_candidates
+
+        fetch(ngrokUrl)
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#candidates-table tbody");
+
+                // Clear existing rows
+                tableBody.innerHTML = "";
+
+                // Add rows for each candidate
+                data.ranked_candidates.forEach(candidate => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${candidate.candidate_id}</td>
+                        <td>${candidate.name}</td>
+                        <td>${candidate.score.toFixed(2)}</td>
+                        <td>${candidate.text_match.toFixed(2)}</td>
+                        <td>${candidate.location_match.toFixed(2)}</td>
+                        <td>${candidate.salary_match.toFixed(2)}</td>
+                        <td>${candidate.education_match.toFixed(2)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+    </script>
+</body>
+</html>

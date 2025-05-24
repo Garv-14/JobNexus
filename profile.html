@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JobNexus - Available Jobs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-image: url("4.jpg");
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand,
+        .nav-link,
+        .dropdown-item {
+            color: white !important;
+        }
+
+        .nav-link:hover,
+        .dropdown-item:hover {
+            color: #ffcc00 !important;
+        }
+
+        .job-container {
+            width: 80%;
+            margin: auto;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        .job-card {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .job-card h2 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .job-card p {
+            font-size: 16px;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .job-card button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .job-card button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">JobNexus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Write About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="jobs.html">Available Jobs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Job Listings Section -->
+    <div class="job-container">
+        <h1>Available Jobs</h1>
+        <div class="job-card">
+            <h2>Software Engineer</h2>
+            <p><strong>Location:</strong> Remote</p>
+            <p><strong>Description:</strong> We are looking for a skilled software engineer to join our team and work on cutting-edge technologies.</p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <h2>Web Developer</h2>
+            <p><strong>Location:</strong> New York, USA</p>
+            <p><strong>Description:</strong> Join our team as a web developer and help us build scalable and user-friendly web applications.</p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <h2>Data Scientist</h2>
+            <p><strong>Location:</strong> San Francisco, USA</p>
+            <p><strong>Description:</strong> We are seeking a data scientist to analyze complex data and provide actionable insights.</p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <h2>UI/UX Designer</h2>
+            <p><strong>Location:</strong> London, UK</p>
+            <p><strong>Description:</strong> We need a creative UI/UX designer to design intuitive and visually appealing interfaces.</p>
+            <button>Apply Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2025–2026 JobNexus, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

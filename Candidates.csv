@@ -1,0 +1,6 @@
+id,name,skills,experience,location,expected_salary,education,willing_to_relocate
+1,Person 1,"Python, PHP, Java, JavaScript, React.js, Flask, Node.js, MySQL, MongoDB","Research Intern at NIT Surathkal, IIT Jodhpur, Android Developer Intern at MSA Tech Solution",Open to relocation,1000000,Bachelor’s Degree in Computer Science,True
+2,Person 2,"WordPress Development, PHP, HTML, CSS, JavaScript","Senior WordPress Developer at San Francisco-based firm, WordPress Developer at Philadelphia-based firm",Open to relocation,400000,12th Pass,True
+3,Person 3,"PHP, HTML, JavaScript frameworks, WordPress, Database Management","PHP Developer, Web Developer, Custom WordPress Plugin Developer","San Francisco, CA",600000,Bachelor’s Degree in Computer Science,False
+4,Person 4,"Adobe Photoshop, Illustrator, Figma, Branding, UX/UI Design","Senior Graphic Designer at Adobe, Graphic Design Specialist at Canva",Open to relocation,800000,Master of Fine Arts - Graphic Design,True
+5,Person 5,"Photography, Adobe Photoshop, Lightroom, Video Editing","Lead Graphic Designer at Google, Graphic Design Manager at Mailchimp",Open to relocation,900000,Master of Fine Arts - Photography,True
